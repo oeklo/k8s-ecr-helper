@@ -19,5 +19,7 @@ docker image pull anadimisra/alpine-awscli2:1.0
 To run the image
 
 ```bash
-docker run --rm -it anadimisra/alpine-awscli2:1.0 [command]
+docker run -v ~/.aws:/root/.aws --rm -it anadimisra/alpine-awscli2:1.0 [command]
 ```
+
+Where `~/.aws` is the directory containing the aws configuration and credentials. For more details on them see [this link](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html).
