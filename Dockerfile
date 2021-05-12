@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.13.5
 
 ARG TZ="Asia/Kolkata"
 ARG GLIBC_VER=2.32-r0
